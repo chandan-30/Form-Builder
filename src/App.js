@@ -1,24 +1,22 @@
-import logo from './logo.svg';
+import Components from "./Components";
+import DndC from "./DndC";
+import  {DndProvider} from "react-dnd";
+import {HTML5Backend} from "react-dnd-html5-backend";
 import './App.css';
-
+//Return Initialized formBuilder set it to HTML
 function App() {
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <DndProvider backend={HTML5Backend}>
+      <div className="row">
+      <h1> FORM BUILDER</h1>
+        <Components></Components>
+        <DndC></DndC>
+      </div>
+    </DndProvider>
+    
   );
 }
 
