@@ -1,0 +1,3 @@
+*.js linguist-language=React linguist-detectable=true
+*.html linguist-language=HTML linguist-detectable=true
+*.css linguist-language=CSS linguist-detectable=true
